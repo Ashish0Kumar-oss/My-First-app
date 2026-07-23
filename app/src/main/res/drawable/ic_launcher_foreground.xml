@@ -1,30 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
+
+    <!-- Image / Photo Card (Left) -->
+    <!-- Card Base Shadow -->
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M23,35 h30 a4,4 0 0,1 4,4 v38 a4,4 0 0,1 -4,4 h-30 a4,4 0 0,1 -4,-4 v-38 a4,4 0 0,1 4,-4 Z" />
+    <!-- White Photo Frame -->
     <path
         android:fillColor="#FFFFFF"
-        android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+        android:pathData="M22,33 h30 a4,4 0 0,1 4,4 v38 a4,4 0 0,1 -4,4 h-30 a4,4 0 0,1 -4,-4 v-38 a4,4 0 0,1 4,-4 Z" />
+    <!-- Photo Inner Canvas -->
+    <path
+        android:fillColor="#E0F2FE"
+        android:pathData="M25,36 h24 a2,2 0 0,1 2,2 v32 a2,2 0 0,1 -2,2 h-24 a2,2 0 0,1 -2,-2 v-32 a2,2 0 0,1 2,-2 Z" />
+    <!-- Sun -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M31,44 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+    <!-- Mountains -->
+    <path
+        android:fillColor="#1D4ED8"
+        android:pathData="M23,70 L34,54 L42,64 L47,58 L51,70 Z" />
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M31,70 L39,58 L46,68 L51,70 Z" />
+
+    <!-- PDF Document Card (Right) -->
+    <!-- Card Shadow -->
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M54,28 h20 l8,8 v38 a4,4 0 0,1 -4,4 h-24 a4,4 0 0,1 -4,-4 v-42 a4,4 0 0,1 4,-4 Z" />
+    <!-- White Document Body -->
+    <path
+        android:fillColor="#F8FAFC"
+        android:pathData="M53,26 h20 l8,8 v38 a4,4 0 0,1 -4,4 h-24 a4,4 0 0,1 -4,-4 v-42 a4,4 0 0,1 4,-4 Z" />
+    <!-- Folded Corner -->
+    <path
+        android:fillColor="#CBD5E1"
+        android:pathData="M73,26 L81,34 H75 a2,2 0 0,1 -2,-2 V26 Z" />
+    <!-- Red PDF Header Badge -->
+    <path
+        android:fillColor="#DC2626"
+        android:pathData="M53,36 h28 v12 h-28 Z" />
+    <!-- White "PDF" text indicator bar/rects on red badge -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M57,40 h5 v4 h-5 Z M64,40 h4 v4 h-4 Z M70,40 h6 v4 h-6 Z" />
+    <!-- Document Text Lines -->
+    <path
+        android:fillColor="#94A3B8"
+        android:pathData="M57,53 h18 v2 h-18 Z M57,58 h14 v2 h-14 Z M57,63 h18 v2 h-18 Z M57,68 h10 v2 h-10 Z" />
+
+    <!-- Conversion Arrow (Center Foreground) -->
+    <!-- Shadow -->
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M42,50 h8 v-5 l10,9 l-10,9 v-5 h-8 Z" />
+    <!-- Glowing Cyan/White Arrow -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M41,48 h8 v-5 l10,9 l-10,9 v-5 h-8 Z" />
 </vector>
